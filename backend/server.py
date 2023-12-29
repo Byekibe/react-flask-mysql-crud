@@ -10,7 +10,8 @@ CORS(app)
 def home():
     connection = connect_to_mysql()
     cursor = connection.cursor(buffered=True)
-    cursor.execute("SELECT * FROM posts")
+    # cursor.execute("SELECT * FROM posts")
+    cursor.execute("SELECT posts.id, posts.title, posts.subtitle, posts.description, posts.image, posts.date, posts.uid, users.username, users.userImg FROM posts JOIN users ON posts.uid = users.id")
     posts = cursor.fetchall()
 
     connection.close()
