@@ -35,7 +35,7 @@ export default function Home() {
           posts.map((post) => (
             <div key={post[0]}>
               <div>
-                <span>Date: {post[5]}</span> || <span>User: {post[6]}</span>
+                <span>Date: {post[5]}</span> || <span>Author: {post[7]}</span>
               </div>
               <h1>{post[1]}</h1>
               <h2>{post[2]}</h2>
