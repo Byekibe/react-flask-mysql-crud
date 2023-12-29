@@ -1,0 +1,40 @@
+.home {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 764px;
+  text-align: justify;
+}
+
+.btnGroup {
+  margin-bottom: 1em;
+}
+
+.update,
+.delete {
+  cursor: pointer;
+  margin-right: 1em;
+  padding: 0.375em 1.5em;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #fff;
+}
+
+.update {
+  background-color: rgb(0, 128, 58);
+}
+
+.delete {
+  background-color: red;
+}
+
+.update:hover,
+.delete:hover {
+  border: 2px solid black;
+  color: black;
+}
